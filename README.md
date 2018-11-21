@@ -34,7 +34,8 @@ var AuthJwt = require('pusudb-use-auth-jwt')
      *  db: 'users',
      *  form: { password : 'password', name : 'email' },
      *  secret : 'my-super-secret',
-     *  expire: '1y'
+     *  expire: '1y',
+     *  assignUser: false // assign userId and userName to repsonse
  * }
  */
 
