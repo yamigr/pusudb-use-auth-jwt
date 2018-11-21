@@ -7,7 +7,27 @@
     "test": "mocha"
   },
   "homepage": "https://github.com/yamigr/pusudb-use-auth-jwt#readme",
-  "keywords": [],
+  "keywords": [
+    "pusuDB",
+    "pusudb",
+    "server",
+    "middleware",
+    "extension",
+    "web",
+    "http",
+    "html",
+    "auth",
+    "IoT",
+    "frameworks",
+    "framework",
+    "backend",
+    "authentication",
+    "webservice",
+    "REST",
+    "jsonwebtoken",
+    "cookie",
+    "token"
+  ],
   "author": "yannick grund, https://github.com/yamigr",
   "license": "MIT",
   "dependencies": {
