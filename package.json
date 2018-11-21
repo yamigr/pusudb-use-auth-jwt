@@ -1,0 +1,21 @@
+{
+  "name": "pusudb-use-auth-jwt",
+  "version": "0.0.1",
+  "description": "A authentiation middleware for the pusudb-framework.",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/yamigr/pusudb-use-auth-jwt#readme",
+  "keywords": [],
+  "author": "yannick grund, https://github.com/yamigr",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "cookies": "^0.7.3",
+    "jsonwebtoken": "^8.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
