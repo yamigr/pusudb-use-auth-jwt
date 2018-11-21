@@ -40,9 +40,9 @@ var AuthJwt = require('pusudb-use-auth-jwt')
 
 var authjwt = new AuthJwt(/* options */) 
 
-// Add some routes which needs authentication
-auth.setRoutes('/admin', '/mypanel' /* other routes as arguments  */)
-auth.setRoutes('/private')
+// Add some routes which needs authentication ( string || array )
+auth.setRoutes('/admin', '/mypanel')
+auth.setRoutes('/private', ['/privateOne', '/privateTwo'])
 
 //add the middleware to the pusudb
 pusudb.use('http', authjwt.serve)
