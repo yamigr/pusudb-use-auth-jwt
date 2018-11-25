@@ -56,6 +56,24 @@ pusudb.listen(function(port, host){
 })
 ```
 
+## HTML
+
+POST the userdata to the pusudb. The names of the input-fields are defined in option form. The action are defined in options login, logout and signin.
+
+## Webocket
+
+Emit a login, logout or a signin package to the pusudb. With websocket routes are not enabled yet.
+
+```js
+// Login
+ws.send(JSON.stringify({db: 'db', meta : 'login', data: { email : 'pusu@pusu.com', password: '1234'}}));
+// Logout
+ws.send(JSON.stringify({db: 'db', meta : 'logout', data: { email : 'pusu@pusu.com', password: '1234'}}));
+// Signin
+ws.send(JSON.stringify({db: 'db', meta : 'login', data: { email : 'pusu@pusu.com', password: '1234'}}));
+``` 
+
+
 <a name="authors"></a>
 
 ## Authors
