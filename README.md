@@ -48,6 +48,9 @@ auth.setRoutes('/private', ['/privateOne', '/privateTwo'])
 //add the middleware to the pusudb
 pusudb.use('http', authjwt.serve)
 
+//add the middleware to the pusudb for websocket-authentication
+pusudb.use('ws', authjwt.serveWebSocket)
+
 pusudb.listen(function(port, host){
     console.log('pusudb listening:', port, host)
 })
