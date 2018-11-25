@@ -66,11 +66,11 @@ Emit a login, logout or a signin package to the pusudb. With websocket routes ar
 
 ```js
 // Login
-ws.send(JSON.stringify({db: 'db', meta : 'login', data: { email : 'pusu@pusu.com', password: '1234'}}));
+ws.send(JSON.stringify({meta : 'login', data: { email : 'pusu@pusu.com', password: '1234'}}));
 // Logout
-ws.send(JSON.stringify({db: 'db', meta : 'logout', data: { email : 'pusu@pusu.com', password: '1234'}}));
+ws.send(JSON.stringify({ meta : 'logout', data: { email : 'pusu@pusu.com', password: '1234'}}));
 // Signin
-ws.send(JSON.stringify({db: 'db', meta : 'login', data: { email : 'pusu@pusu.com', password: '1234'}}));
+ws.send(JSON.stringify({meta : 'signin', data: { email : 'pusu@pusu.com', password: '1234'}}));
 ``` 
 
 
