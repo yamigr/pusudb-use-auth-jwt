@@ -48,10 +48,10 @@ auth.setRoutes('/private', ['/privateOne', '/privateTwo'])
 auth.setRoutesWebSocket('/api')
 
 //add the middleware to the pusudb
-pusudb.use('http', authjwt.serve)
+pusudb.useBefore('http', authjwt.serve)
 
 //add the middleware to the pusudb for websocket-authentication
-pusudb.use('ws', authjwt.serveWebSocket)
+pusudb.useBefore('ws', authjwt.serveWebSocket)
 
 pusudb.listen(function(port, host){
     console.log('pusudb listening:', port, host)
@@ -60,7 +60,7 @@ pusudb.listen(function(port, host){
 
 ## HTML
 
-POST the userdata to the pusudb. The names of the input-fields are defined in option form. The action are defined in options login, logout and signin.
+POST the userdata to the pusudb. The names of the form-input-fields are defined in option form. The action are defined in options login, logout and signin.
 
 ## WebSocket
 
