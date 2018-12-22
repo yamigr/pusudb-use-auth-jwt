@@ -14,7 +14,7 @@ npm install pusudb-use-auth-jwt --save
 ```
 
 ## Use
-Create the auth-instance and define the options.
+Create the auth-instance and define the options. The user can be accessed with req.user in other middlewares.
 
 ```js
 var Pusudb = require('pusudb')
@@ -35,7 +35,7 @@ var AuthJwt = require('pusudb-use-auth-jwt')
      *  form: { password : 'password', name : 'email' },
      *  secret : 'my-super-secret',
      *  expire: '1y',
-     *  assignUser: false // assign userId and userName to repsonse
+     *  assignUser: false // assign key and userName to req.docs to handle it in the response
  * }
  */
 
