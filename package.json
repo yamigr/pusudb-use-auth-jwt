@@ -1,6 +1,6 @@
 {
   "name": "pusudb-use-auth-jwt",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "A authentiation middleware for the pusudb-framework.",
   "main": "lib/main.js",
   "scripts": {
