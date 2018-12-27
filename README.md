@@ -31,6 +31,7 @@ var AuthJwt = require('pusudb-use-auth-jwt')
      *  redirect: '/index',
      *  redirectActive: false,
      *  cookie : 'bearer', // cookie key
+     *  secret : 'my-token-secret', // default a unique-string
      *  db: './users', // define './other-db' or __dirname + '/pathToDb/users'
      *  form: { password : 'password', name : 'email' },
      *  expire: '1y',
