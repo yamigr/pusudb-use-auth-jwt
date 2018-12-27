@@ -30,10 +30,9 @@ var AuthJwt = require('pusudb-use-auth-jwt')
      *  signinActive: true,
      *  redirect: '/index',
      *  redirectActive: false,
-     *  cookie : 'bearer',
-     *  db: 'users',
+     *  cookie : 'bearer', // cookie key
+     *  db: './users', // define './other-db or __dirname + '/pathToDb/users'
      *  form: { password : 'password', name : 'email' },
-     *  secret : 'my-super-secret',
      *  expire: '1y',
      *  assignUser: false // assign key and userName to req.docs to handle it in the response
  * }

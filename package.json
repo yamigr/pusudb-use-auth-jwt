@@ -31,7 +31,6 @@
   "author": "yannick grund, https://github.com/yamigr",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^3.0.3",
     "cookies": "^0.7.3",
     "jsonwebtoken": "8.3.0"
   },
