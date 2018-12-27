@@ -67,11 +67,11 @@ Emit a login, logout, signin or token package to the pusudb.
 
 ```js
 // Login
-ws.send(JSON.stringify({meta : 'login', data: { email : 'pusu@pusu.com', password: '1234'}}));
+ws.send(JSON.stringify({meta : 'login', data: { value : { email : 'pusu@pusu.com', password: '1234'}}} ));
 // Logout
-ws.send(JSON.stringify({ meta : 'logout', data: { email : 'pusu@pusu.com', password: '1234'}}));
+ws.send(JSON.stringify({ meta : 'logout', data: { value : { email : 'pusu@pusu.com', password: '1234'}}}));
 // Signin
-ws.send(JSON.stringify({meta : 'signin', data: { email : 'pusu@pusu.com', password: '1234'}}));
+ws.send(JSON.stringify({meta : 'signin', data: { value: { email : 'pusu@pusu.com', password: '1234'}}}));
 // Token
 ws.send(JSON.stringify({meta : 'token', data: /* jsonwebtoken from http-cookie, check options */));
 ``` 
